@@ -6,7 +6,7 @@ const message = require("./message");
 const cron = require("node-cron");
 let counter = 0;
 
-cron.schedule("*/15 * * * *", () => {
+cron.schedule("*/5 * * * *", () => {
 	let tweetsForToday = message;
 
 	if (counter < tweetsForToday.length) {
